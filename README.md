@@ -20,29 +20,31 @@ Follow these steps to set up and run the project:
    git clone git@github.com:SergeyDev1996/ApolloTest.git
    cd ApolloTest
 
+2. **Copy the env file**:
+   ```bash
+   copy .env.template .env
 
-2. **Install requirements:**:
+3. **Install requirements:**:
     ```bash
     pip install -r requirements.txt
     
 
-3. **Run migrations:**
+4. **Run migrations:**
 
      Run the following command to create the necessary database tables:
     ```bash
       python manage.py migrate
       
-4. **Run the server**:
+5. **Run the server**:
 
     Start the Django development server:
     ```bash
     python manage.py runserver
    
-5. **Send a POST request**:
+6. **Send a POST request**:
 
     Use a tool like curl or Postman to send a POST request to the following URL:
     ```bash 
    curl -X POST http://127.0.0.1:8000/api/runapp
    ```
    You should receive a notification stating that the request has been written to the database.
-
